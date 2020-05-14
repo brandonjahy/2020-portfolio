@@ -3,6 +3,11 @@
 $Bigfont: 'Satisfy', cursive;
 $Smallfont: 'Quicksand', sans-serif;
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
 
 header {
   height: 100vh;
@@ -84,5 +89,58 @@ header {
     left: 20%;
     transform: rotate(280deg);
     border: 10px solid #9068be8e;
+  }
+  .project-grid {
+    position: absolute;
+    margin-top: -150px;
+    height: 600px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    .project1 {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      grid-area: 1 / 1 / 5 / 3;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .project2 {
+      background: red;
+      grid-area: 3 / 3 / 6 / 6;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .project3 {
+      background: green;
+      grid-area: 1 / 4 / 3 / 8;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .project4 {
+      background: blue;
+      grid-area: 3 / 6 / 8 / 8;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .project5 {
+      background: purple;
+      grid-area: 6 / 1 / 8 / 5;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 }
