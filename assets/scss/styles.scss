@@ -104,42 +104,162 @@ header {
       height: 100%;
       width: 100%;
       background: #000;
+      position: relative;
       grid-area: 1 / 1 / 5 / 3;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease;
+        opacity: 0;
+        background-color: rgba(0, 139, 186, 0.301);
+      }      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover .overlay{
+        opacity: 1;
       }
     }
     .project2 {
+      position: relative;
       background: red;
       grid-area: 3 / 3 / 6 / 6;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease;
+        opacity: 0;
+        background-color: rgba(0, 139, 186, 0.301);
+      }      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover .overlay{
+        opacity: 1;
       }
     }
     .project3 {
+      position: relative;
       background: green;
       grid-area: 1 / 4 / 3 / 8;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease;
+        opacity: 0;
+        background-color: rgba(0, 139, 186, 0.301);
+      }      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover .overlay{
+        opacity: 1;
       }
     }
     .project4 {
+      position: relative;
       background: blue;
       grid-area: 3 / 6 / 8 / 8;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease;
+        opacity: 0;
+        background-color: rgba(0, 139, 186, 0.301);
+      }      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover .overlay{
+        opacity: 1;
       }
     }
     .project5 {
+      position: relative;
       background: purple;
       grid-area: 6 / 1 / 8 / 5;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease;
+        opacity: 0;
+        background-color: rgba(0, 139, 186, 0.301);
+      }      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover .overlay{
+        opacity: 1;
       }
     }
   }
