@@ -93,6 +93,7 @@ header {
   .project-grid {
     position: absolute;
     margin-top: -150px;
+    left: 15%;
     height: 600px;
     width: 70%;
     display: grid;
@@ -260,6 +261,83 @@ header {
       }
       &:hover .overlay{
         opacity: 1;
+      }
+    }
+  }
+}
+
+.reviews {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  
+  .diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid #ec7f377e;
+    position: relative;
+    top: 150px;
+    left: 15%;
+  }
+  .diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #ec7f377e;
+  }
+  .review-block {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+    .feedback1 {
+      padding: 30px 10px;
+      h1 {
+        font-family: $Bigfont;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      p{
+        font-family: $Smallfont;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #4ABDAC;
+      }
+    }
+    .feedback2 {
+      padding: 30px 10px;
+      h1 {
+        font-family: $Bigfont;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        text-align: start;
+      }
+      p{
+        font-family: $Smallfont;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FC4A1A;
+      }
+    }
+    .feedback3 {
+      padding: 30px 10px;
+      h1 {
+        font-family: $Bigfont;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        text-align: end;
+      }
+      p{
+        font-family: $Smallfont;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #F7B733;
       }
     }
   }
