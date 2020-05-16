@@ -3,11 +3,16 @@
 $Bigfont: 'Satisfy', cursive;
 $Smallfont: 'Quicksand', sans-serif;
 
-.container {
-  width: 1100px;
-  margin: 0 auto;
-  align-items: center;
-}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} 
+
+    .container {
+      width: 1100px;
+      margin: 0 auto;
+      align-items: center;
+    }
 
 header {
   height: 100vh;
@@ -48,6 +53,10 @@ header {
       font-size: 1.1rem;
       color: #0567b3;
       margin: 10px 0;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
   .heading {
@@ -111,6 +120,7 @@ header {
       &:hover {
         transform: scale(1.2);
         z-index: 1;
+        cursor: pointer;
       }
       .overlay {
         position: absolute;
@@ -143,6 +153,7 @@ header {
       &:hover {
         transform: scale(1.2);
         z-index: 1;
+        cursor: pointer;
       }
       .overlay {
         position: absolute;
@@ -175,6 +186,7 @@ header {
       &:hover {
         transform: scale(1.2);
         z-index: 1;
+        cursor: pointer;
       }
       .overlay {
         position: absolute;
@@ -207,6 +219,7 @@ header {
       &:hover {
         transform: scale(1.2);
         z-index: 1;
+        cursor: pointer;
       }
       .overlay {
         position: absolute;
@@ -239,6 +252,7 @@ header {
       &:hover {
         transform: scale(1.2);
         z-index: 1;
+        cursor: pointer;
       }
       .overlay {
         position: absolute;
@@ -270,6 +284,7 @@ header {
   height: 100vh;
   width: 100%;
   position: relative;
+  padding-top: 100px;
   
   .diamond {
     width: 0;
@@ -279,6 +294,7 @@ header {
     position: relative;
     top: 150px;
     left: 15%;
+    z-index: 1;
   }
   .diamond:after {
     content: '';
@@ -290,13 +306,32 @@ header {
     border: 50px solid transparent;
     border-top: 70px solid #ec7f377e;
   }
-  .review-block {
+  .circle {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 51%;
+    left: 80%;
+    background: rgba(55, 158, 106, 0.541);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .review-block {
+    // position: absolute;
+    // top: 30%;
+    // left: 10%;
+    height: 400px;
+    width: 100%;
+    // border: 3px solid #000;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     .feedback1 {
-      padding: 30px 10px;
+      padding: 30px 20px;
+      height: 100%;
+      width: 30%;
       h1 {
         font-family: $Bigfont;
         font-size: 2rem;
@@ -307,38 +342,96 @@ header {
         font-family: $Smallfont;
         font-size: 1rem;
         font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.2;
         color: #4ABDAC;
       }
     }
     .feedback2 {
-      padding: 30px 10px;
+      padding: 90px 10px;
+      height: 100%;
+      width: 30%;
       h1 {
         font-family: $Bigfont;
         font-size: 2rem;
         padding-bottom: 10px;
-        text-align: start;
+        text-align: center;
       }
       p{
         font-family: $Smallfont;
         font-size: 1rem;
         font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.2;
         color: #FC4A1A;
       }
     }
     .feedback3 {
-      padding: 30px 10px;
+      padding: 150px 10px;
+      height: 100%;
+      width: 30%;
       h1 {
         font-family: $Bigfont;
         font-size: 2rem;
         padding-bottom: 10px;
-        text-align: end;
+        text-align: center;
       }
       p{
         font-family: $Smallfont;
         font-size: 1rem;
         font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.2;
         color: #F7B733;
       }
+    }
+  }
+}
+
+.contact {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  font-family: $Smallfont;
+  .contact-block {
+    height: 400px;
+    width: 700px;
+    // border: 2px solid #000;
+    margin: 0 auto;
+    .text-block {
+      float: left;
+      display: inline-block;  
+      width: 40%;
+      padding: 20px 10px;
+      h1 {
+        font-size: 1.8rem;
+        font-family: $Smallfont;
+        letter-spacing: 1.3px;
+        font-weight: 500;
+        text-align: center;
+        padding: 10px 0;
+      }
+      h4 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #8235e6c5;
+      }
+      h5 {
+        font-family: $Smallfont;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 15px;
+        color: #f08629bd;
+      }
+    }
+    img {
+      display: inline-block;
+      float: right;
+      // padding-top: 30px;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
     }
   }
 }
